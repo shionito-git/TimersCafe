@@ -1,0 +1,108 @@
+:root {
+  color: #333;
+  --main-color: #67504a;
+  --sub-color: #ff9800;
+  line-height: 1.5;
+  font-family: "Noto Sans", sans-serif;
+}
+
+header,
+footer,
+.menu-items,
+.page-top {
+  text-align: center;
+}
+
+nav ul,
+.menu-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/*　ヘッダー　*/
+header {
+  border-top: 10px solid var(--main-color);
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+nav ul {
+  margin-top: 20px;
+}
+a {
+  transition: 0.3s;
+  color: var(--sub-color);
+  font-weight: bold;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+/*　見出し　*/
+h1 {
+  width: 200px;
+  margin: auto;
+  filter: drop-shadow(0 0 3px #999);
+}
+
+h2 {
+  color: var(--sub-color);
+  font-size: 2rem;
+  font-family: "Caveat", cursive;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 0.5em;
+  align-items: baseline;
+  border-bottom: 3px solid var(--sub-color);
+  padding-bottom: 5px;
+
+  &::before {
+    content: "";
+    background-image: url(img/coffee-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 0.8em;
+    aspect-ratio: 1/1;
+  }
+
+  .sub-title {
+    font-size: 0.5em;
+  }
+}
+
+/* セクション */
+section {
+  width: 1000px;
+  margin: 30px auto 20px;
+  padding: 20px;
+}
+
+/*　商品メニュー　*/
+.menu-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-weight: bold;
+  color: var(--main-color);
+  li {
+    flex: 1 1 200px;
+    img {
+      border-radius: 10px;
+    }
+  }
+  .menu-name {
+    margin-top: 1rem;
+  }
+  .price {
+    font-size: 1.2em;
+    margin-bottom: 1rem;
+    color: var(--sub-color);
+  }
+}
+
+/*　フッター　*/
+footer {
+  padding: 20px;
+}
