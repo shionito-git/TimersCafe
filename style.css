@@ -126,19 +126,30 @@ footer {
     font-size: 0.9rem;
   }
   nav ul {
-    flex: 1;
-    a {
-      background-color: #7b6357;
-      color: #fff;
-      padding: 1rem 0;
-      display: block;
-      border-radius: 0.5rem;
-      margin: auto;
-      font-size: 0.8rem;
+    li {
+      flex: 1;
+      a {
+        background-color: #7b6357;
+        color: #fff;
+        padding: 1rem 0;
+        display: block;
+        border-radius: 0.5rem;
+        margin: auto;
+        font-size: 0.8rem;
+      }
     }
   }
 }
 
 .menu-items {
   flex-direction: column;
+  img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    width: 100%;
+    max-width: 300px;
+    &.pudding {
+      object-position: 0 80%;
+    }
+  }
 }
